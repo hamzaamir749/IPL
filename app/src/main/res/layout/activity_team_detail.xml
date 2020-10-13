@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TeamDetailActivity">
+
+
+    <include
+        android:id="@+id/toolbar_td"
+        layout="@layout/toolbar_all"></include>
+
+    <ImageView
+        android:id="@+id/teamDetail_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/csk"
+        android:scaleType="fitXY"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_teamDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

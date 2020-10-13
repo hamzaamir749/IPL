@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IPL</string>
+    <string name="live_score">Live Score</string>
+    <string name="schedual">Schedule</string>
+    <string name="teams">Teams</string>
+    <string name="about_us">About Us</string>
+    <string name="recent_matches">Recent Matches</string>
+    <string name="point_table">Point Table</string>
+    <string name="venues">Venues</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="menu_home">home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_about">About us</string>
+    <string name="batting">Batting</string>
+    <string name="score">CSK 124/4* overs 13.4</string>
+    <string name="targets">MI 188/7</string>
+    <string name="vs">VS</string>
+    <string name="start_action">Start Action</string>
+    <string name="city">City</string>
+    <string name="stadium_name">Stadium Name</string>
+    <string name="win_status">CSK won by 20 Runs</string>
+    <string name="team_a">Team A</string>
+    <string name="team_name">Team Name</string>
+    <string name="match_01">Match 01</string>
+    <string name="date">Monday , 14/3/2020</string>
+    <string name="eden_garden_west_bengal">Eden Garden, West Bengal</string>
+    <string name="ms_dhoni">MS Dhoni</string>
+</resources>

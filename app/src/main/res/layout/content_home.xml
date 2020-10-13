@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebgnew"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--<include
+            android:id="@+id/Home_ToolBar"
+            layout="@layout/toolbar_home" />-->
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:fontFamily="sans-serif"
+               android:text="T20 IPL"
+               android:textAlignment="center"
+               android:textSize="35sp"
+               android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="8.5"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="20dp"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_liveScore"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1.2dp">
+
+            <!--<RelativeLayout
+                android:id="@+id/Home_liveScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/live"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/live_score"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/teams"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/live_score"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_schedule"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1.2dp">
+
+           <!-- <RelativeLayout
+                android:id="@+id/Home_Schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/schedulebg"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/schedual"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/schedule"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedual"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_recentMatches"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1.2dp">
+
+        <!--    <RelativeLayout
+                android:id="@+id/Home_RecentMatches"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/recent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/recent_matches"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_margin="16dp"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:layout_height="70dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/recentmatch"
+
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/recent_matches"
+                     android:textAlignment="center"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="18sp"
+                     android:textStyle="bold"
+
+                     />
+
+
+             </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_pointTable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1.2dp">
+
+          <!--  <RelativeLayout
+                android:id="@+id/Home_PointTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/point"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/point_table"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+
+
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_margin="16dp"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:layout_height="70dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/pointtable"
+
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/point_table"
+                     android:textAlignment="center"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="18sp"
+                     android:textStyle="bold"
+
+                     />
+
+
+             </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_teams"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1.2dp">
+
+            <!--<RelativeLayout
+                android:id="@+id/Home_Teams"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardbg"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/teams"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal|center_vertical"
+                 android:layout_margin="16dp"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:layout_width="70dp"
+                     android:layout_height="70dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/teams"
+
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/teams"
+                     android:textAlignment="center"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="18sp"
+                     android:textStyle="bold"
+
+                     />
+
+
+             </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>
